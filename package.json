@@ -1,0 +1,33 @@
+{
+  "name": "dsh-thinking-zh",
+  "version": "0.1.0",
+  "private": true,
+  "license": "MIT",
+  "description": "Translate expanded model reasoning into Simplified Chinese inside DSH Chat",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/filek-mu/dsh-thinking-zh.git"
+  },
+  "homepage": "https://github.com/filek-mu/dsh-thinking-zh",
+  "bugs": {
+    "url": "https://github.com/filek-mu/dsh-thinking-zh/issues"
+  },
+  "type": "module",
+  "exports": {
+    "./locale/*.json": "./locale/*.json",
+    "./icon": "./icon.svg"
+  },
+  "files": [
+    "cordis.patch.yml",
+    "locale/*.json",
+    "README.md",
+    "README.zh.md",
+    "LICENSE",
+    "icon.svg"
+  ],
+  "dsh": {
+    "bundle": {
+      "patch": "./cordis.patch.yml"
+    }
+  }
+}
